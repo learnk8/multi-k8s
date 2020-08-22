@@ -14,7 +14,8 @@ before_install:
   - gcloud config set project gcp-trial-282616
   - gcloud config set compute/zone asia-southeast1-a
   - gcloud container clusters get-credentials k8s-cluster
-
+  
+language: generic
 deploy:
   provider: script
   script: bash ./deploy.sh
